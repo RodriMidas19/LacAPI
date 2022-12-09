@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2a240d89-2f58-45d4-97a3-09e677c0208a/AppServices/subscriptions/2a240d89-2f58-45d4-97a3-09e677c0208a/resourceGroups/API/providers/Microsoft.Web/sites/LACWebAPI",
+    "appService.deploySubpath": "backend"
+}
