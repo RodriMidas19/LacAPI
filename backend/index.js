@@ -11,10 +11,10 @@ app.listen(3000,()=>{
 });
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'db_LAC',
+    host: 'hostingmysql335.amen.pt',
+    user: 'RodriMidas19',
+    password: 'ofixe19.2005R',
+    database: 'db_lac',
     port: 3306
 });
 db.connect(err=>{
