@@ -11,7 +11,7 @@ app.listen(3000,()=>{
 });
 
 const db = mysql.createConnection({
-    host: 'http://51.103.46.56/phpmyadmin',
+    host: 'localhost',
     user: 'root',
     password: 'ofixe19.2005R',
     database: 'db_lac',
