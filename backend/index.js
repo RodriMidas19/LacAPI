@@ -13,7 +13,7 @@ app.listen(3000,()=>{
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'ofixe19.2005R',
+    password: 'Teste123',
     database: 'db_lac',
     port: 3306
 });
