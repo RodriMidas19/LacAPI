@@ -11,8 +11,8 @@ app.listen(3000,()=>{
 });
 
 const db = mysql.createConnection({
-    host: 'hostingmysql335.amen.pt',
-    user: 'RodriMidas19',
+    host: 'http://51.103.46.56/phpmyadmin',
+    user: 'root',
     password: 'ofixe19.2005R',
     database: 'db_lac',
     port: 3306
