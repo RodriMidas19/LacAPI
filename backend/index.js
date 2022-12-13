@@ -59,3 +59,21 @@ app.get('/lac/equipas',(req, res)=>{
         else{console.log('data not found');}
     })
 })
+//Get data from Equipas
+app.get('/lac/equipas',(req, res)=>{
+    let getId= req.params.id;
+    let qry = `SELECT * FROM jogadoresEqui where nomeEquipa = '${getId}' `;
+
+    db.query(qry,(err,result)=>{ 
+        if(err){
+            console.log(err,'erros');
+        }
+        if(result.length >0){
+            res.send({
+                message:'equipas get',
+                data:result
+            })
+        }
+        else{console.log('data not found');}
+    })
+})
