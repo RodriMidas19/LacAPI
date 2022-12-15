@@ -60,9 +60,9 @@ app.get('/lac/equipas',(req, res)=>{
     })
 })
 //Get data from Equipas
-app.get('/lac/equipas/jogadores',(req, res)=>{
-    let getId= req.body.nome;
-    let qry = `SELECT * FROM jogadoresEqui`;
+app.get('/lac/equipas/:name',(req, res)=>{
+    let nome  = req.params.name;
+    let qry = `SELECT * FROM jogadoresEqui where nomeEquipa = ${nome}`;
 
     db.query(qry,(err,result)=>{ 
         if(err){
