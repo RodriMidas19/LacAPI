@@ -60,7 +60,7 @@ app.get('/lac/equipas',(req, res)=>{
     })
 })
 //Get data from Equipas
-app.get('/lac/equipas',(req, res)=>{
+app.get('/lac/equipas/jogadores',(req, res)=>{
     let getId= req.params.id;
     let qry = `SELECT * FROM jogadoresEqui where nomeEquipa = '${getId}' `;
 
@@ -70,7 +70,7 @@ app.get('/lac/equipas',(req, res)=>{
         }
         if(result.length >0){
             res.send({
-                message:'equipas get',
+                message:'All players data',
                 data:result
             })
         }
